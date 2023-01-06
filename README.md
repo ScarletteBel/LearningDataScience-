@@ -1,3 +1,4 @@
 # LearningBigDataAnalysis 
 
-# NLP folder added
+# NLP folder
+# Logistic regression, voice recognition 
