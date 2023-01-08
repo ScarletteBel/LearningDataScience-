@@ -1,4 +1,4 @@
-## Scarlette Bello Barron    c0860234
+
 
 ## Distinguish betwen one male and female voice !:D
 ## Starting from importing the data 
