@@ -4,4 +4,3 @@ import numpy as np
 
 df = pd.read_csv("cars.csv")
 
-print(df)
