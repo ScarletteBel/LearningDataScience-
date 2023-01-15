@@ -1,0 +1,13 @@
+CREATE TABLE EMPLOYEE (
+Fname VARCHAR (15) NOT NULL,
+Mnit CHAR,
+Lname VARCHAR (15) NOT NULL,
+Ssn CHAR (9) NOT NULL,
+Bdate DATE, 
+Address VARCHAR (30),
+Sex CHAR,
+Salary DECIMAL (10,2),
+Super_ssn VARCHAR (9),
+Dno INT NOT NULL
+)
+

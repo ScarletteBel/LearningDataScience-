@@ -1,0 +1,128 @@
+##LAB3
+
+CREATE TABLE T1 (id int, a int);
+
+CREATE TABLE T2 (id int, b int);
+
+INSERT INTO T1 (id, a)
+VALUES 
+(1, 57),
+(2, 23),
+(3, 9);
+
+INSERT INTO T2 (id, b)
+VALUES
+(1, 2),
+(3, 11),
+(4, 42),
+(5, 30),
+(5, 56),
+(2,12),
+(1, 70);
+
+###Q1
+#Q1: a)4
+
+SELECT T1.id, T1.a, T2.b
+FROM T1
+INNER JOIN T2
+ON T1.id = T2.id;
+
+###Q2
+#Q2: d) 10
+
+SELECT T1.id, T1.a, T2.b
+FROM T1
+INNER JOIN T2
+ON T1.a > T2.b;
+
+###Q3
+#Q3: b) 4
+
+SELECT T1.id, T1.a, T2.b
+FROM T1
+LEFT JOIN T2
+ON T1.id = T2.id;
+
+###Q4
+#Q4: e) 7
+
+SELECT T1.id, T1.a, T2.b
+FROM T2
+LEFT JOIN T1
+ON T1.id = T2.id;
+
+###Q5
+#Q5: E)7
+SELECT * FROM t1
+LEFT JOIN t2 ON t1.id = t2.id
+UNION
+SELECT * FROM t1
+RIGHT JOIN t2 ON t1.id = t2.id
+
+###Q6
+#Q6: b) 9
+INSERT INTO T1 (id, a)
+VALUES (1, 20);
+
+SELECT * FROM t1
+LEFT JOIN t2 ON t1.id = t2.id
+UNION
+SELECT * FROM t1
+RIGHT JOIN t2 ON t1.id = t2.id
+
+###Q7
+#Q7:  a) 3
+CREATE TABLE T4 (a int);
+INSERT INTO T4(a)
+ VALUES 
+ (4),
+ (3),
+ (2),
+ (1), 
+ (null); 
+
+CREATE TABLE T5 (b int);
+INSERT INTO T5(b)
+ VALUES 
+ (1),
+ (1),
+ (1),
+ (null);
+
+SELECT * FROM T4
+INNER JOIN T5
+ON T4.a = t5.b;
+
+
+### Q8
+
+SELECT T1.id, T1.a, T2.b, T3.c
+FROM T1
+INNER JOIN T2
+ON T1.id = T2.id 
+INNER JOIN T3
+ON T1.id = T3.id;
+
+###Q9
+
+SELECT Fname, Lname, Address
+FROM employee
+	INNER JOIN department 
+    ON employee.Ssn
+WHERE Mgr_ssn = 333445555 AND Dnumber = Dno
+	ORDER BY Fname, Lname, Address;
+
+###Q10
+
+SELECT PROJECT.Pnumber, PROJECT.Dnum, EMPLOYEE.Lname, EMPLOYEE.Address, EMPLOYEE.Bdate
+FROM PROJECT 
+INNER JOIN DEPARTMENT 
+INNER JOIN EMPLOYEE 
+ON PROJECT.Dnum = DEPARTMENT.DNumber AND DEPARTMENT.Mgr_ssn = EMPLOYEE.SSN
+WHERE PROJECT.Plocation='Stafford';
+
+
+
+
+

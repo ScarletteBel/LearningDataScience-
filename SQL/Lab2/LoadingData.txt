@@ -1,0 +1,8 @@
+LOAD DATA LOCAL INFILE '\Documentos\Lambton\DataEncodingPrinciples&Methods\Lab2\EmployeeContent.csv'
+INTO TABLE employee
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 3 ROWS
+(Fname, Mnit, Lname, Ssn, Bdate, Address, Sex, Salary, Super_ssn, Dno);
+

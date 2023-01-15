@@ -1,0 +1,58 @@
+#Scarlette Bello Barron    0860234
+
+
+ALTER TABLE employee
+ADD CONSTRAINT EMPPK PRIMARY KEY (Ssn);
+ALTER TABLE employee
+ADD CONSTRAINT EMPSUPERFK
+    FOREIGN KEY (Super_ssn)
+    REFERENCES employee (Ssn)
+    ON UPDATE CASCADE
+    ON DELETE SET NULL;
+
+ALTER TABLE department
+ADD CONSTRAINT DEPTPK PRIMARY KEY (Dnumber);
+
+ALTER TABLE project
+ADD CONSTRAINT PRIMARY KEY (Pnumber);
+
+ALTER TABLE employee
+ADD CONSTRAINT EMPDEPTFK
+    FOREIGN KEY (Dno)
+    REFERENCES department (Dnumber)
+    ON DELETE SET NULL ON
+    UPDATE CASCADE;
+
+ALTER TABLE department 
+ADD CONSTRAINT DEPTMGRFK
+    FOREIGN KEY (Mgr_ssn)
+    REFERENCES employee (Ssn)
+    ON DELETE SET NULL ON
+    UPDATE CASCADE;
+
+ALTER TABLE works_on
+ADD CONSTRAINT 
+    FOREIGN KEY (Essn)
+    REFERENCES employee (Ssn);
+
+ALTER TABLE dept_locations
+ADD CONSTRAINT 
+    FOREIGN KEY (Dnumber)
+    REFERENCES department (Dnumber)
+    ON DELETE SET NULL ON
+    UPDATE CASCADE;
+
+ALTER TABLE project
+ADD CONSTRAINT 
+	FOREIGN KEY (Dnum)
+    REFERENCES department (Dnumber);
+
+ALTER TABLE works_on
+ADD CONSTRAINT 
+    FOREIGN KEY (Pno)
+    REFERENCES project (Pnumber);
+
+ALTER TABLE dependent
+ADD CONSTRAINT 
+    FOREIGN KEY (Essn)
+    REFERENCES employee (Ssn);
