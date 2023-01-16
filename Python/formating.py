@@ -1,0 +1,11 @@
+print("%10.3f%20.2f"%(12.345673, 56.93836373))
+print("%-10.3f%20.2f"%(12.345673, 56.93836373))
+print()
+grade1 = float(input("Enter grade1: "))
+grade2 = float(input("Enter grade2: "))
+print("%-10.2f%-20.2f%-30.2f"%(grade1,grade2,(grade1+grade2)))
+print("%-10.2f%-20.2f%30.2f"%(grade1,grade2,(grade1+grade2)))
+print()
+print("%-10.2d%-20.2d%-30.2d"%(grade1,grade2,(grade1+grade2)))
+print("%-10.2d%-20.2d%30.2d"%(grade1,grade2,(grade1+grade2)))
+
