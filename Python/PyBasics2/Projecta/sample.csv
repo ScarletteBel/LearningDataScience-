@@ -1,0 +1,21 @@
+Student_id,Age,Grade,Employed,marks
+1,19,1st Class,yes,29
+2,20,2nd Class,no,41
+3,18,1st Class,no,57
+4,21,2nd Class,no,29
+5,19,1st Class,no,57
+6,20,2nd Class,yes,53
+7,19,3rd Class,yes,78
+8,21,3rd Class,yes,70
+9,22,3rd Class,yes,97
+10,21,1st Class,no,58
+11,20,3rd Class,yes,83
+12,20,1st Class,no,46
+13,19,1st Class,yes,69
+14,20,3rd Class,no,28
+15,19,1st Class,yes,62
+16,19,2nd Class,no,98
+17,20,2nd Class,yes,79
+18,18,3rd Class,no,27
+19,21,2nd Class,yes,82
+20,19,2nd Class,no,71
