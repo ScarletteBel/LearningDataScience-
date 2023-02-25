@@ -25,5 +25,5 @@ This repository has all the small projects that involve all the knowledge and im
 
 
 
-                                                Made with 💜
-                                                   🌵 
+                                                 Made with 💜
+                                                    🌵 
