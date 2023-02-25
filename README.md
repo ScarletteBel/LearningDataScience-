@@ -3,8 +3,8 @@ This repository has all the small projects that involve all the knowledge and im
 
 
 
-##Artificial Intelligence (AI)
-###This folder has micro-projects of the beginning of machine learning which is part of AI, involving supervised machine learning working with continuous data and        categorical data for making predictions.
+## Artificial Intelligence (AI)
+### This folder has micro-projects of the beginning of machine learning which is part of AI, involving supervised machine learning working with continuous data and        categorical data for making predictions.
 
 
 * NaturalLanguageProcessing (NLP)
@@ -25,5 +25,5 @@ Statistic concepts are described and applied in this file, using different pytho
 
 
 
-                                                                     Made with 💜
-                                                                        🌵 
+                                                                    Made with 💜
+                                                                       🌵 
