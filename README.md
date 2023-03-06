@@ -6,6 +6,9 @@ This repository has all the small projects that involve all the knowledge and im
 ### Artificial Intelligence (AI)
 ##### This folder has micro-projects of the beginning of machine learning which is part of AI, involving supervised machine learning working with continuous data and        categorical data for making predictions.
 
+- Prediction of patients with tendency to get diabetes with a Linear Regression supervised machine learning model 
+
+
 
 ### NaturalLanguageProcessing (NLP)
 ##### This is a section where NLP is implemented, and the reading and analyzing of recorded text or voice is analyzed as a subfield of AI; from the most basic base methods to the prediction of text classifications.
