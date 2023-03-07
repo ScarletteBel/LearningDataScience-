@@ -13,6 +13,7 @@ This repository has all the small projects that involve all the knowledge and im
 ### NaturalLanguageProcessing (NLP)
 ##### This is a section where NLP is implemented, and the reading and analyzing of recorded text or voice is analyzed as a subfield of AI; from the most basic base methods to the prediction of text classifications.
 
+-
 
 ### Python 
 ##### This folder has basic exercises where python's logic was executed and described, understanding data structures and commands. Some libraries are used in this file; nevertheless, python is used for executing everything in the rest of the files in this repository, where more python tools were implemented.
