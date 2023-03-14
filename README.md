@@ -6,7 +6,8 @@ This repository has all the small projects that involve all the knowledge and im
 ### Artificial Intelligence (AI)
 ##### This folder has micro-projects of the beginning of machine learning which is part of AI, involving supervised machine learning working with continuous data and        categorical data for making predictions.
 
-- Prediction of patients with tendency to get diabetes with a Linear Regression supervised machine learning model 
+- Prediction of patients with tendency to get diabetes with a Linear Regression supervised machine learning model.
+- 
 
 
 
