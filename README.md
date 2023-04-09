@@ -25,7 +25,7 @@ This repository has all the small projects that involve all the knowledge and im
 
 
 ### Statistics 
-##### Statistic concepts are described and applied in this file, using different python libraries (seaborn, matplotlib, numpy, scipy...) for applying this field of maths and the visualizations which can not be missed for a good understanding of the data.
+##### Statistic concepts are described and applied in this file, using different python libraries (seaborn, matplotlib, numpy, scipy...) for applying this field of maths and the visualizations which can not be missed for a good understanding of the data..
 
 
 
