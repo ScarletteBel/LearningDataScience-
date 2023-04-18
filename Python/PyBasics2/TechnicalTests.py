@@ -79,7 +79,7 @@
 #     bigs_num = max(num_list)
 
 #     return bigs_num
-    
+
 # num_str = input("Write different numbers devided by a comma (,): ")
 # print(big_num(num_str))
 
