@@ -59,28 +59,44 @@
 # print(sum_pair(number))
             
 
-def big_num(s):
-    num_num = s.split(",")
-    num_list = []
-    for c in num_num:
-        num_list.append(int(c))
+# def big_num(s):
+#     num_num = s.split(",")
+#     num_list = []
+#     for c in num_num:
+#         num_list.append(int(c))
 
-    bigs_num = max(num_list)
+#     bigs_num = max(num_list)
 
-    return bigs_num
+#     return bigs_num
     
-num_str = input("Write different numbers devided by a comma (,): ")
-print(big_num(num_str))
+# num_str = input("Write different numbers devided by a comma (,): ")
+# print(big_num(num_str))
 
 
 
+# def big_num(s):
+#     num_list = [int(c) for c in s.split(",")]
+#     bigs_num = max(num_list)
 
-
-def big_num(s):
-    num_list = [int(c) for c in s.split(",")]
-    bigs_num = max(num_list)
-
-    return bigs_num
+#     return bigs_num
     
-num_str = input("Write different numbers devided by a comma (,): ")
-print(big_num(num_str))
+# num_str = input("Write different numbers devided by a comma (,): ")
+# print(big_num(num_str))
+
+
+
+# def long_words(s):
+#     word_list = [str(c) for c in s.split(",")]
+#     longer_words = []
+#     for c in word_list:
+#         leng = len(c) 
+#         if leng > 5:
+#             longer_words.append(c)
+#     return longer_words
+
+# words = input("Write a different words devided by a comma (,): ")
+# print(long_words(words))
+
+
+
+
