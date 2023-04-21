@@ -81,6 +81,7 @@
 #     return bigs_num
 
 # num_str = input("Write different numbers devided by a comma (,): ")
+
 # print(big_num(num_str))
 
 
@@ -99,4 +100,14 @@
 
 
 
+def longest_word(s):
+    words = [str(c) for c in s.split(" ")]
+    lens = []
+    for c in words:
+       lengs = len(c)
+       lens.append(lengs)
+    max_word = max(lens)
+    return max_word
 
+text = "Hola perros <3 donde viven"
+print(longest_word(text))
