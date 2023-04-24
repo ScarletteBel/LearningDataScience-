@@ -100,14 +100,26 @@
 
 
 
-def longest_word(s):
-    words = [str(c) for c in s.split(" ")]
-    lens = []
-    for c in words:
-       lengs = len(c)
-       lens.append(lengs)
-    max_word = max(lens)
-    return max_word
+# def longest_word(s):
+#     words = [str(c) for c in s.split(" ")]
+#     lens = []
+#     for c in words:
+#        lengs = len(c)
+#        lens.append(lengs)
+#     max_word = max(lens)
+#     return max_word
 
-text = "Hola perros <3 donde viven"
-print(longest_word(text))
+# text = "Hola perros <3 donde viven"
+# print(longest_word(text))
+
+
+def factorial(n):
+    fact = 1
+    while n > 1:
+        fact *= n
+        n -= 1
+    return fact
+
+number = 8
+print(factorial(number))
+
