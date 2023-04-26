@@ -113,13 +113,22 @@
 # print(longest_word(text))
 
 
-def factorial(n):
-    fact = 1
-    while n > 1:
-        fact *= n
-        n -= 1
-    return fact
+# def factorial(n):
+#     fact = 1
+#     while n > 1:
+#         fact *= n
+#         n -= 1
+#     return fact
 
-number = 8
-print(factorial(number))
+# number = 8
+# print(factorial(number))
+
+
+def splitNumbers(n):
+
+
+
+numbers = input("Write different numbers devided by a comma (,): ")
+print(splitNumbers(numbers))
+
 
