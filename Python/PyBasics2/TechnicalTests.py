@@ -124,19 +124,31 @@
 # print(factorial(number))
 
 
-def splitNumbers(n):
-    numbers_list = [int(c) for c in n.split(" ")]
-    even = 0
-    odds = 0
+# def splitNumbers(n):
+#     numbers_list = [int(c) for c in n.split(" ")]
+#     even = 0
+#     odds = 0
     
+#     for c in numbers_list:
+#         if c % 2 == 0:
+#             odds += c
+#         else:
+#             even += c
+#     return odds, even
+
+
+# numbers = input("Write different numbers devided by a blank space( ): ")
+# print(splitNumbers(numbers))
+
+
+def noDuplicates(n):
+    numbers_list = [int(c) for c in n.split(" ")]
+    new_list = []
     for c in numbers_list:
-        if c % 2 == 0:
-            odds += c
-        else:
-            even += c
-    return odds, even
+        if c not in new_list:
+            new_list.append(c)
+        
+    return new_list
 
-
-numbers = input("Write different numbers devided by a blank space( ): ")
-print(splitNumbers(numbers))
-
+numbers = input("write numbers devided by a blank space, you can repeat them as much as you want!: ")
+print(noDuplicates(numbers))
