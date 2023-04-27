@@ -125,10 +125,18 @@
 
 
 def splitNumbers(n):
+    numbers_list = [int(c) for c in n.split(" ")]
+    even = 0
+    odds = 0
+    
+    for c in numbers_list:
+        if c % 2 == 0:
+            odds += c
+        else:
+            even += c
+    return odds, even
 
 
-
-numbers = input("Write different numbers devided by a comma (,): ")
+numbers = input("Write different numbers devided by a blank space( ): ")
 print(splitNumbers(numbers))
-
 
