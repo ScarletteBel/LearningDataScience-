@@ -141,14 +141,34 @@
 # print(splitNumbers(numbers))
 
 
-def noDuplicates(n):
-    numbers_list = [int(c) for c in n.split(" ")]
-    new_list = []
-    for c in numbers_list:
-        if c not in new_list:
-            new_list.append(c)
+# def noDuplicates(n):
+#     numbers_list = [int(c) for c in n.split(" ")]
+#     new_list = []
+#     for c in numbers_list:
+#         if c not in new_list:
+#             new_list.append(c)
         
-    return new_list
+#     return new_list
 
-numbers = input("write numbers devided by a blank space, you can repeat them as much as you want!: ")
-print(noDuplicates(numbers))
+# numbers = input("write numbers devided by a blank space, you can repeat them as much as you want!: ")
+# print(noDuplicates(numbers))
+
+
+
+def ordering_numbers(n):
+    numbers_list = [int(c) for c in n.split(" ")]
+    ordered_numbers = []
+    for c in numbers_list:
+        if not ordered_numbers:
+            ordered_numbers.append(c)
+        else:
+            for i, num in enumerate(ordered_numbers):
+                if c > num:
+                    ordered_numbers.insert(i,c)
+                    break
+            else: 
+                ordered_numbers.append(c)
+    return ordered_numbers
+
+numbers = input("write numbers devided by blank space: ")
+print(ordering_numbers(numbers ))
