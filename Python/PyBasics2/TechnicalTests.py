@@ -163,7 +163,7 @@ def ordering_numbers(n):
             ordered_numbers.append(c)
         else:
             for i, num in enumerate(ordered_numbers):
-                if c > num:
+                if c < num:
                     ordered_numbers.insert(i,c)
                     break
             else: 
