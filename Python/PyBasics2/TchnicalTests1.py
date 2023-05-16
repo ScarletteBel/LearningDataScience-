@@ -128,13 +128,52 @@
 #     ban_inS = T
     
 
-# print(solution("BAANNAABCDDKBAA"))
+# # print(solution("BAANNAABCDDKBAA"))
 
-def solution(S):
-    letter_counts = {"B": 0, "A": 0, "N": 0}
-    for c in S:
-        if c in letter_counts:
-            letter_counts[c] += 1
-    return min(letter_counts["B"], letter_counts["A"] // 2, letter_counts["N"] // 3)
+# def solution(S):
+#     letter_counts = {"B": 0, "A": 0, "N": 0}
+#     for c in S:
+#         if c in letter_counts:
+#             letter_counts[c] += 1
+#     total_ban = min(letter_counts["B"], letter_counts["A"] // 2, letter_counts["N"] // 3)
+#     return total_ban
 
-print(solution("BAAANNTGRAAA"))
+# print(solution("BAAANNTGRAAA"))
+
+
+# def solution(S):
+#     baannnserie_counts = {"B": 0, "A": 0, "N": 0}
+#     for c in S:
+#         if c in baannnserie_counts:
+#             baannnserie_counts[c] += 1
+#     total_ban = min(baannnserie_counts["B"], baannnserie_counts["A"] // 2, baannnserie_counts["N"] // 3)
+#     return total_ban
+
+
+
+# def multiply_by_two(list):
+#     new_list = [c*2 for c in list]
+#     return new_list
+
+# print(multiply_by_two([2, 7, -1, 14, 118, 0]))
+    
+
+# def even_numbers(list):
+#     new_list = [c for c in list if c%2 == 0]
+#     return new_list
+
+# print(even_numbers([2, 7, -1, 14, 118]))
+
+
+
+def find_pairs(l, t):
+    seen = {}
+    for i, num in enumerate(l):
+        diff = t - num
+        if diff in seen:
+            return [seen[diff], num]
+        seen[num] = num
+    return None
+
+print(find_pairs([5, 19, 22, 11, 24, 2], 7))
+
