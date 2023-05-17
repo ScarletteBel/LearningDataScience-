@@ -166,14 +166,33 @@
 
 
 
-def find_pairs(l, t):
-    seen = {}
-    for i, num in enumerate(l):
-        diff = t - num
-        if diff in seen:
-            return [seen[diff], num]
-        seen[num] = num
-    return None
+# def find_pairs(l, t):
+#     seen = {}
+#     for i, num in enumerate(l):
+#         diff = t - num
+#         if diff in seen:
+#             return [seen[diff], num]
+#         seen[num] = num
+#     return None
 
-print(find_pairs([5, 19, 22, 11, 24, 2], 7))
+# print(find_pairs([5, 19, 22, 11, 24, 2], 7))
 
+
+# def creating_dic(l):
+#     dic = {}
+#     for c in l:
+#         dic[c] = c**2
+#     return dic 
+
+# print(creating_dic([1, 2, 7, 14]))
+
+def unique_elements(l):
+    my_set = set()
+    unique_list = []
+    for c in l:
+            if c not in my_set:
+                my_set.add(c)
+                unique_list.append(c)
+    return unique_list
+
+print(unique_elements([13, 200, 200, 14, 21, 2, 21, 7, 7, 7, 13]))
