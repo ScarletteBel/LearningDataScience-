@@ -186,13 +186,31 @@
 
 # print(creating_dic([1, 2, 7, 14]))
 
-def unique_elements(l):
-    my_set = set()
-    unique_list = []
-    for c in l:
-            if c not in my_set:
-                my_set.add(c)
-                unique_list.append(c)
-    return unique_list
+# def unique_elements(l):
+#     my_set = set()
+#     unique_list = []
+#     for c in l:
+#             if c not in my_set:
+#                 my_set.add(c)
+#                 unique_list.append(c)
+#     return unique_list
 
-print(unique_elements([13, 200, 200, 14, 21, 2, 21, 7, 7, 7, 13]))
+# print(unique_elements([13, 200, 200, 14, 21, 2, 21, 7, 7, 7, 13]))
+
+
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+def prime_nums(l):
+    prime_list = []
+    for num in l:
+        if is_prime(num):
+            prime_list.append(num)
+    return prime_list
+
+print(prime_nums([2, 7, 14, 10, -1]))
