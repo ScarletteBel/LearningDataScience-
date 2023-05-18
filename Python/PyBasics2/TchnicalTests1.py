@@ -198,19 +198,53 @@
 # print(unique_elements([13, 200, 200, 14, 21, 2, 21, 7, 7, 7, 13]))
 
 
-def is_prime(n):
-    if n < 2:
-        return False
-    for i in range(2, int(n ** 0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
 
-def prime_nums(l):
-    prime_list = []
-    for num in l:
-        if is_prime(num):
-            prime_list.append(num)
-    return prime_list
 
-print(prime_nums([2, 7, 14, 10, -1]))
+
+
+
+# def is_prime(n):
+#     if n < 2:
+#         return False
+#     for i in range(2, int(n ** 0.5) + 1):
+#         if n % i == 0:
+#             return False
+#     return True
+
+# def prime_nums(l):
+#     prime_list = []
+#     for num in l:
+#         if is_prime(num):
+#             prime_list.append(num)
+#     return prime_list
+
+# print(prime_nums([2, 7, 14, 10, -1]))
+
+
+# def revere_string(s):
+#     inversed_list = []
+#     for c in s:
+#         inversed_list.insert(0,c)
+#         inversed_string =  ''.join(inversed_list)
+#     return inversed_string
+
+# print(revere_string("Hello there!"))
+
+# def revere_string(s):
+#     inversed_string = s[::-1]
+#     return inversed_string
+
+# print(revere_string("Hello there!"))
+
+
+def word_counts(l):
+    str_list = [c.lower() for c in l]
+    dict_count = {}
+    for c in str_list:
+        if c not in dict_count:
+            dict_count[c] = 1
+        else:
+            dict_count[c] += 1
+    return dict_count
+
+print(word_counts(["Hello", "Hallo", "Hola", "Bonjour", "Hola", "Hola", "Bonjour"]))
