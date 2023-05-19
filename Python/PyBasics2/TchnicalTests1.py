@@ -237,14 +237,50 @@
 # print(revere_string("Hello there!"))
 
 
-def word_counts(l):
-    str_list = [c.lower() for c in l]
-    dict_count = {}
-    for c in str_list:
-        if c not in dict_count:
-            dict_count[c] = 1
-        else:
-            dict_count[c] += 1
-    return dict_count
+# def word_counts(l):
+#     str_list = [c.lower() for c in l]
+#     dict_count = {}
+#     for c in str_list:
+#         if c not in dict_count:
+#             dict_count[c] = 1
+#         else:
+#             dict_count[c] += 1
+#     return dict_count
 
-print(word_counts(["Hello", "Hallo", "Hola", "Bonjour", "Hola", "Hola", "Bonjour"]))
+# print(word_counts(["Hello", "Hallo", "Hola", "Bonjour", "Hola", "Hola", "Bonjour"]))
+
+
+# def unique_pairs(nums):
+#     pairs = set()
+#     for i in range(len(nums)):
+#         for j in range(i+1, len(nums)):
+#             if nums[i] + nums[j] == 10:
+#                 pair = tuple(sorted((nums[i], nums[j])))
+#                 pairs.add(pair)
+#     return pairs
+
+# nums = [1, 9, 2, 8, 3, 7, 4, 6, 5, 5, 5, -1, 11]
+# print(unique_pairs(nums)) 
+
+
+def unique_fruits(f):
+    only_fruits = {}
+    for c in f:
+        if c['fruit'] not in only_fruits:
+            only_fruits[c['fruit']] = c['quantity']
+        else:
+            only_fruits[c['fruit']] += c['quantity']
+    return only_fruits 
+    
+
+fruits = [
+    {'fruit': 'apple', 'quantity': 10}, 
+    {'fruit': 'banana', 'quantity': 5}, 
+    {'fruit': 'orange', 'quantity': 3},
+    {'fruit': 'pear', 'quantity': 6},
+    {'fruit': 'apple', 'quantity': 2},
+    {'fruit': 'banana', 'quantity': 5},
+    {'fruit': 'apple', 'quantity': 1},
+]
+
+print(unique_fruits(fruits))
