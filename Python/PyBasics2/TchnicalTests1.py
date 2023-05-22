@@ -263,24 +263,40 @@
 # print(unique_pairs(nums)) 
 
 
-def unique_fruits(f):
-    only_fruits = {}
-    for c in f:
-        if c['fruit'] not in only_fruits:
-            only_fruits[c['fruit']] = c['quantity']
-        else:
-            only_fruits[c['fruit']] += c['quantity']
-    return only_fruits 
+# def unique_fruits(f):
+#     only_fruits = {}
+#     for c in f:
+#         if c['fruit'] not in only_fruits:
+#             only_fruits[c['fruit']] = c['quantity']
+#         else:
+#             only_fruits[c['fruit']] += c['quantity']
+#     return only_fruits 
     
 
-fruits = [
-    {'fruit': 'apple', 'quantity': 10}, 
-    {'fruit': 'banana', 'quantity': 5}, 
-    {'fruit': 'orange', 'quantity': 3},
-    {'fruit': 'pear', 'quantity': 6},
-    {'fruit': 'apple', 'quantity': 2},
-    {'fruit': 'banana', 'quantity': 5},
-    {'fruit': 'apple', 'quantity': 1},
+# fruits = [
+#     {'fruit': 'apple', 'quantity': 10}, 
+#     {'fruit': 'banana', 'quantity': 5}, 
+#     {'fruit': 'orange', 'quantity': 3},
+#     {'fruit': 'pear', 'quantity': 6},
+#     {'fruit': 'apple', 'quantity': 2},
+#     {'fruit': 'banana', 'quantity': 5},
+#     {'fruit': 'apple', 'quantity': 1},
+# ]
+
+# print(unique_fruits(fruits))
+
+
+
+def avg_grades(l):
+    dic_grades = {}
+    for c in l:
+        dic_grades[c["name"]] = sum(c["grades"]) / len(c["grades"])
+    return dic_grades
+
+students = [
+    {"name": "Alice", "grades": [80, 85, 90]},
+    {"name": "Bob", "grades": [70, 75, 80]},
+    {"name": "Charlie", "grades": [60, 65, 70]}
 ]
 
-print(unique_fruits(fruits))
+print(avg_grades(students))
