@@ -321,3 +321,22 @@
 #         ]
 
 # print(books_clasifier(books))
+
+
+# def update_grades(grades, opr, sub, grd=None):
+#     if opr == "add" or opr == "update":
+#         grades[sub] = int(grd)
+#     elif opr == "remove":
+#         if sub in grades:
+#             del grades[sub]
+#     return grades
+
+
+# grades = {"Math": 85, "English": 90, "History": 88}
+
+# print(update_grades(grades, "add", "Physics", 92))
+# print(update_grades(grades, "update", "English", 93))
+# print(update_grades(grades, "remove", "Science"))
+# print(update_grades(grades, "remove", "History"))
+
+
