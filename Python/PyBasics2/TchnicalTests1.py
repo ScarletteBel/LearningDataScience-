@@ -287,16 +287,37 @@
 
 
 
-def avg_grades(l):
-    dic_grades = {}
-    for c in l:
-        dic_grades[c["name"]] = sum(c["grades"]) / len(c["grades"])
-    return dic_grades
+# def avg_grades(l):
+#     dic_grades = {}
+#     for c in l:
+#         dic_grades[c["name"]] = sum(c["grades"]) / len(c["grades"])
+#     return dic_grades
 
-students = [
-    {"name": "Alice", "grades": [80, 85, 90]},
-    {"name": "Bob", "grades": [70, 75, 80]},
-    {"name": "Charlie", "grades": [60, 65, 70]}
-]
+# students = [
+#     {"name": "Alice", "grades": [80, 85, 90]},
+#     {"name": "Bob", "grades": [70, 75, 80]},
+#     {"name": "Charlie", "grades": [60, 65, 70]}
+# ]
 
-print(avg_grades(students))
+# print(avg_grades(students))
+
+
+# def books_clasifier(books):
+#     by_author = {}
+#     for book in books:
+#         author = book["author"]
+#         if author in by_author:
+#             by_author[author].append(book)
+#         else:
+#             by_author[author] = [book]
+
+#     return by_author
+
+# books = [    {"title": "Book 1", "author": "Author A", "year": 2001},
+#              {"title": "Book 2", "author": "Author B", "year": 2002},    
+#              {"title": "Book 3", "author": "Author A", "year": 2003},    
+#              {"title": "Book 4", "author": "Author C", "year": 2004},    
+#              {"title": "Book 5", "author": "Author B", "year": 2005},
+#         ]
+
+# print(books_clasifier(books))
