@@ -369,23 +369,39 @@
 # print(count_words(fruits))
 
 
-def product_prices(l):
-    new_dic = {}
-    for c in l:
-        product_name = c["product"]
-        product_price = c["price"]
-        if product_name not in new_dic:
-            new_dic[product_name] = product_price
-        else:
-            if product_price < new_dic[product_name]:
-                new_dic[product_name] = product_price
-    return new_dic
+# def product_prices(l):
+#     new_dic = {}
+#     for c in l:
+#         product_name = c["product"]
+#         product_price = c["price"]
+#         if product_name not in new_dic:
+#             new_dic[product_name] = product_price
+#         else:
+#             if product_price < new_dic[product_name]:
+#                 new_dic[product_name] = product_price
+#     return new_dic
 
-products = [
-    {"product": "apple", "price": 1.0},
-    {"product": "banana", "price": 0.5},
-    {"product": "orange", "price": 0.8},
-    {"product": "apple", "price": 0.9},
-    {"product": "banana", "price": 0.4},
+# products = [
+#     {"product": "apple", "price": 1.0},
+#     {"product": "banana", "price": 0.5},
+#     {"product": "orange", "price": 0.8},
+#     {"product": "apple", "price": 0.9},
+#     {"product": "banana", "price": 0.4},
+# ]
+# print(product_prices(products))
+
+def add_avrg(l):
+    for c in l:
+        grades = c["grades"]
+        avrg = sum(grades)/len(grades)
+        grade_avrg = round(avrg, 1)
+        c["average"] = grade_avrg
+    return l
+
+students = [
+    {"name": "Alice", "grades": [80, 85, 90]},
+    {"name": "Bob", "grades": [70, 75, 80]},
+    {"name": "Charlie", "grades": [60, 65, 70]}
 ]
-print(product_prices(products))
+
+print(add_avrg(students))
