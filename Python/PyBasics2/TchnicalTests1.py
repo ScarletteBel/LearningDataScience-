@@ -340,3 +340,52 @@
 # print(update_grades(grades, "remove", "History"))
 
 
+# def get_value(dic, key):
+#     if key in dic:
+#         return  dic[key]
+#     else:
+#         return "not in this dictionary"
+
+# person = {
+#     "name": "Alice",
+#     "age": 25,
+#     "city": "New York"
+# }
+
+# print(get_value(person, "nationality"))
+# print(get_value(person, "age"))
+
+
+# def count_words(l):
+#     str_dict = {}
+#     for c in l:
+#         if c not in str_dict:
+#             str_dict.update({c:1})
+#         else:
+#             str_dict[c] += 1
+#     return str_dict
+
+# fruits = ["apple", "orange", "banana", "apple", "orange", "apple"]
+# print(count_words(fruits))
+
+
+def product_prices(l):
+    new_dic = {}
+    for c in l:
+        product_name = c["product"]
+        product_price = c["price"]
+        if product_name not in new_dic:
+            new_dic[product_name] = product_price
+        else:
+            if product_price < new_dic[product_name]:
+                new_dic[product_name] = product_price
+    return new_dic
+
+products = [
+    {"product": "apple", "price": 1.0},
+    {"product": "banana", "price": 0.5},
+    {"product": "orange", "price": 0.8},
+    {"product": "apple", "price": 0.9},
+    {"product": "banana", "price": 0.4},
+]
+print(product_prices(products))
