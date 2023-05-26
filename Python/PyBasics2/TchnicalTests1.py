@@ -390,18 +390,45 @@
 # ]
 # print(product_prices(products))
 
-def add_avrg(l):
-    for c in l:
-        grades = c["grades"]
-        avrg = sum(grades)/len(grades)
-        grade_avrg = round(avrg, 1)
-        c["average"] = grade_avrg
-    return l
+# def add_avrg(l):
+#     for c in l:
+#         grades = c["grades"]
+#         avrg = sum(grades)/len(grades)
+#         grade_avrg = round(avrg, 1)
+#         c["average"] = grade_avrg
+#     return l
 
-students = [
-    {"name": "Alice", "grades": [80, 85, 90]},
-    {"name": "Bob", "grades": [70, 75, 80]},
-    {"name": "Charlie", "grades": [60, 65, 70]}
-]
+# students = [
+#     {"name": "Alice", "grades": [80, 85, 90]},
+#     {"name": "Bob", "grades": [70, 75, 80]},
+#     {"name": "Charlie", "grades": [60, 65, 70]}
+# ]
 
-print(add_avrg(students))
+# print(add_avrg(students))
+
+
+
+
+# def get_all_paths(tree, path=[]):
+#     for key in tree:
+#         new_path = path + [key]
+#         print(new_path)
+#         if isinstance(tree[key], dict):
+#             get_all_paths(tree[key], new_path)
+
+# tree = {
+#     "dir1": {
+#         "dir2": {
+#             "dir3": {}
+#         },
+#         "file1": {}
+#     },
+#     "file2": {},
+#     "dir3": {
+#         "file3": {},
+#         "dir4": {}
+#     }
+# }
+
+# print(get_all_paths(tree))
+
