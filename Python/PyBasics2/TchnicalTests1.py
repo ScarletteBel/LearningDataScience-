@@ -432,3 +432,38 @@
 
 # print(get_all_paths(tree))
 
+# def filter_cities(cities, min_populat, max_area):
+#     clasified_cities = {}
+#     for city, attributes in cities.items():
+#         if attributes["population"] > min_populat and attributes["area"] < max_area:
+#             clasified_cities[city] = attributes
+#     return clasified_cities
+
+# cities = {
+#     "Los Angeles": {"population": 3977686, "area": 1302, "timezone": "Pacific"},
+#     "New York": {"population": 8419600, "area": 783.8, "timezone": "Eastern"},
+#     "Chicago": {"population": 2701423, "area": 588, "timezone": "Central"},
+# }
+
+# print(filter_cities(cities, 3000000, 800))
+
+
+def highest_grade(students):
+    max_grade = 0
+    top_student = ''
+
+    for student in students:
+        if max(student['grades']) > max_grade:
+            max_grade = max(student['grades'])
+            top_student = student['name']
+
+    return top_student, max_grade
+    
+
+students = {
+    "Alice": {"Math": 85, "English": 78, "Science": 92},
+    "Bob": {"Math": 91, "History": 82, "Science": 79},
+    "Charlie": {"Math": 79, "English": 88, "Art": 92},
+}
+
+print(highest_grade(students))
