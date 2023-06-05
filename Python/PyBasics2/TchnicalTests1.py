@@ -448,22 +448,84 @@
 # print(filter_cities(cities, 3000000, 800))
 
 
-def highest_grade(students):
-    max_grade = 0
-    top_student = ''
+# def highest_grade(students):
+#     max_grade = 0
+#     top_student = ''
 
-    for student in students:
-        if max(student['grades']) > max_grade:
-            max_grade = max(student['grades'])
-            top_student = student['name']
+#     for student in students:
+#         if max(student['grades']) > max_grade:
+#             max_grade = max(student['grades'])
+#             top_student = student['name']
 
-    return top_student, max_grade
+#     return top_student, max_grade
     
 
-students = {
-    "Alice": {"Math": 85, "English": 78, "Science": 92},
-    "Bob": {"Math": 91, "History": 82, "Science": 79},
-    "Charlie": {"Math": 79, "English": 88, "Art": 92},
-}
+# students = {
+#     "Alice": {"Math": 85, "English": 78, "Science": 92},
+#     "Bob": {"Math": 91, "History": 82, "Science": 79},
+#     "Charlie": {"Math": 79, "English": 88, "Art": 92},
+# }
 
-print(highest_grade(students))
+# print(highest_grade(students))
+
+
+# def student_report(students):
+#     for c in students:
+#         student_name = c["name"]
+#         print(student_name)
+#         average = sum(c["grades"])/len(c["grades"])
+#         print("Average Grade: ", average)
+#         attendance = c["attendance"]
+#         print("attendance: ", attendance)
+
+#         if average > 90:
+#             print("Note: High distinction")
+#         if attendance < 0.90:
+#             print("Note: Low Atendance")
+#         print()
+    
+
+# students = [
+#     {"name": "Alice", "grades": [85, 86, 92, 78], "attendance": 0.95},
+#     {"name": "Bob", "grades": [79, 85, 88, 91], "attendance": 0.87},
+#     {"name": "Charlie", "grades": [90, 92, 91, 92], "attendance": 0.99},
+# ]
+
+# print(student_report(students))
+
+
+
+# def student_report(students):
+#     for student in students:
+#         try:
+#             student_name = student["name"]
+#             grades = student["grades"]
+#             attendance = student["attendance"]
+#         except KeyError as e:
+#             print(f"Missing required information in student data: {e}")
+#             continue
+
+#         # calculate average grade
+#         try:
+#             average = sum(grades) / len(grades)
+#         except ZeroDivisionError:
+#             print(f"No grades found for student {student_name}.")
+#             continue
+#         print(f"Student Name: {student_name}")
+#         print(f"Average Grade: {average:.2f}")
+#         print(f"Attendance: {attendance}%")
+
+#         if average > 90:
+#             print("Note: High distinction")
+#         if attendance < 90:
+#             print("Note: Low attendance")
+#         print("\n")  # adding a newline for better readability between students report
+
+# students = [
+#     {"name": "Alice", "grades": [80, 85, 90], "attendance": 95},
+#     {"name": "Bob", "grades": [70, 75, 80], "attendance": 85},
+#     {"name": "Charlie", "grades": [60, 65, 70], "attendance": 90}
+#     ]
+
+# print(student_report(students))
+    
