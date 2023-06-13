@@ -529,3 +529,47 @@
 
 # print(student_report(students))
     
+
+
+
+# import pandas as pd 
+
+# data = pd.read_csv('sales_data-csv')
+
+# # Check the first few rows of the data
+# print(data.head())
+
+# # 1. Best-selling product and the quantity sold
+# product_sales = data.groupby('Product')['Quantity'].sum()
+# best_selling_product = product_sales.idxmax()
+# best_selling_units = product_sales.max()
+
+# print(f"The best selling product is {best_selling_product} with {best_selling_units} units sold.")
+
+# # 2. Total sales for the company
+# total_sales = (data['Quantity'] * data['Price Each']).sum()
+# print(f"The total sales for the company is {total_sales}.")
+
+# # 3. City with the highest number of sales
+# data['City'] = data['Purchase Address'].apply(lambda x: x.split(',')[1].strip())
+
+# city_sales = data.groupby('City').apply(lambda x: (x['Quantity'] * x['Price Each']).sum())
+
+
+# city_max_sales = city_sales.idxmax()
+
+# print(f"The city with the highest number of sales is {city_max_sales}.")
+
+# # 4. Most common time for sales
+
+# # Convert 'Order Date' to datetime and extract the hour
+# data['Hour'] = pd.to_datetime(data['Order Date']).dt.hour
+
+# # Count the number of sales for each hour
+# hour_sales = data['Hour'].value_counts()
+
+# # Get the hour with maximum sales
+# max_hour_sales = hour_sales.idxmax()
+
+# print(f"The most common hour for sales is {max_hour_sales}:00.")
+
